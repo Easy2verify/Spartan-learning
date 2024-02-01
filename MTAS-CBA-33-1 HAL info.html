@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<!-- saved from url=(0089)https://ims-mtas.sero.wh.rnd.internal.ericsson.com/cgi-bin/halinfo.cgi?node=MTAS-CBA-33-1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <title>MTAS-CBA-33-1 HAL info</title>
+     <style>
+         div.layer {
+             width:100%;
+             margin:0px;
+             border:1px solid gray;
+             line-height:150%;
+         }
+         div.layer_header,div.layer_footer {
+             padding:0.5em;
+             color:white;
+             background-color:gray;
+             clear:left;
+         }
+         div.layer_content_row {
+             display:table;
+             padding:0.5em;
+         }
+         div.layer_content_column {
+             display:table-cell;
+             padding:0.5em;
+             vertical-align: top;
+         }
+         h2.header {
+             padding:0;
+             margin:0;
+         }
+         h3.header {
+             padding:0;
+             margin:0;
+         }
+         .caption {
+             font-size:110%;
+             font-weight:bold;
+             font-family:"Times New Roman", Times, serif;
+         }
+         td {
+             font-size:80%;
+             line-height: 1em;
+         }
+         .cell_first_row {
+             font-weight: bold;
+             color: red;
+         }
+     </style>
+ </head>
+ <body>
+     <h1>Logical Node MTAS-CBA-33-1 (nick: "Brad-1")</h1>
+     <div class="layer">
+         <div class="layer_header">
+             <h2 class="header">Logical Node details</h2>
+         </div>
+         <div class="layer_content_row">
+             <div title="The active traffic separation profile" class="layer_content_column">
+                 <table border="1">
+                     <caption class="caption">vMTAS reference connectivity - traffic separation Profile 1</caption>
+                     <colgroup><col>
+                     <col>
+                     <col>
+                     <col>
+                     <col>
+                     </colgroup><tbody><tr>
+                         <td align="center"><b>VPN</b></td>
+                         <td align="center"><b>(VIP FrontEnd)<br>network</b></td>
+                         <td align="center"><b>ALB</b></td>
+                         <td align="center"><b>IPSec</b></td>
+                         <td align="center"><b>(V)IP</b></td>
+                         <td align="center"><b>Service Access Point(s)</b></td>
+                     </tr>
+                     <tr>
+                         <td align="center" rowspan="9"><b>OM</b></td>
+                         <td rowspan="5">mtas_om_sp1<br><small>
+l2: 2203<br>
+INET4 subnet: 10.80.68.48/29<br>
+INET4 gateway(s): 10.80.68.49<br>
+INET6 subnet: 2001:1b70:8294:3d2a::/64<br>
+INET6 gateway(s): fe80::10:80:68:49
+                         </small></td>
+                         <td align="center" rowspan="5">-<br>(non-vip)</td>
+                         <td align="center" rowspan="5">-</td>
+                         <td><span class="cell_first_row">OM IP</span><br><small>
+INET4: 10.80.68.52<br>
+INET6: 2001:1b70:8294:3d2a::4<br>
+alias:
+                         </small></td>
+                         <td>COM CLI, Netconf, SNMP and FileM SFTP</td>
+                     </tr>
+                     <tr>
+                         <td rowspan="2"><span class="cell_first_row">SC-1 System Management IP</span><br><small>
+INET4: 10.80.68.53<br>
+INET6: 2001:1b70:8294:3d2a::5<br>
+alias:
+                         </small></td>
+                         <td>SC-1 maintenance</td>
+                     </tr>
+                     <tr>
+                         <td>NTP synchronization, client side</td>
+                     </tr>
+                     <tr>
+                         <td rowspan="2"><span class="cell_first_row">SC-2 System Management IP</span><br><small>
+INET4: 10.80.68.54<br>
+INET6: 2001:1b70:8294:3d2a::6<br>
+alias:
+                         </small></td>
+                         <td>SC-2 maintenance</td>
+                     </tr>
+                     <tr>
+                         <td>NTP synchronization, client side</td>
+                     </tr>
+                     <tr>
+                         <td rowspan="4">mtas_om_sp2<br><small>
+l2: 2204<br>
+INET4 subnet: 172.17.49.0/25<br>
+INET4 gateway(s): 172.17.49.125,172.17.49.126<br>
+INET6 subnet: fd00:0:ac11:3100::/64<br>
+INET6 gateway(s): fd00:0:ac11:3100::fffd, fd00:0:ac11:3100::fffe
+                         </small></td>
+                         <td rowspan="4">mtas_om</td>
+                         <td rowspan="4"><span class="cell_first_row">OM IPSec IP</span><br><small>
+INET4: 10.80.100.132<br>
+INET6: 2001:1b70:8294:3d00::3318<br>
+alias: 
+                         </small></td>
+                         <td rowspan="2"><span class="cell_first_row">OM VIP</span><br><small>
+INET4: 10.80.100.124<br>
+INET6: 2001:1b70:8294:3d00::3310<br>
+alias: platform-vip, platform-vip6
+                         </small></td>
+                         <td>Provisioning LDAP</td>
+                     </tr>
+                     <tr>
+                         <td>Ro, Rf and CDS interfaces</td>
+                     </tr>
+                     <tr>
+                         <td><span class="cell_first_row">CAI3G VIP</span><br><small>
+INET4: 10.80.100.127<br>
+INET6: 2001:1b70:8294:3d00::3313<br>
+alias: cai3g-vip4, cai3g-vip6
+                         </small></td>
+                         <td>CAI3G interface</td>
+                     </tr>
+                     <tr>
+                         <td><span class="cell_first_row">Foo VIP</span><br><small>
+INET4: 10.80.100.130<br>
+INET6: 2001:1b70:8294:3d00::3316<br>
+alias: 
+                         </small></td>
+                      <td>X1</td>
+                     </tr>
+                     <tr>
+                         <td align="center" rowspan="4"><b>Sig</b></td>
+                         <td rowspan="4">mtas_sig_sp<br><small>
+l2: 2206<br>
+INET4 subnet: 172.19.49.0/25<br>
+INET4 gateway(s): 172.19.49.125,172.19.49.126<br>
+INET6 subnet: fd00:0:ac13:3100::/64<br>
+INET6 gateway(s): fd00:0:ac13:3100::fffd, fd00:0:ac13:3100::fffe
+                         </small></td>
+                         <td rowspan="4">mtas_sig</td>
+                         <td align="center" rowspan="4">-</td>
+                         <td><span class="cell_first_row">Traffic VIP</span><br><small>
+INET4: 10.80.100.125<br>
+INET6: 2001:1b70:8294:3d00::3311<br>
+alias: tasvip4, tasvip6
+                         </small></td>
+                         <td>All the other logical interfaces</td>
+                     </tr>
+                     <tr>
+                         <td><span class="cell_first_row">Ut VIP</span><br><small>
+INET4: 10.80.100.126<br>
+INET6: 2001:1b70:8294:3d00::3312<br>
+alias: ut-vip4, ut-vip6
+                         </small></td>
+                         <td>Ut interface</td>
+                     </tr>
+                     <tr>
+                         <td><span class="cell_first_row">SIGTRAN VIP1</span><br><small>
+INET4: 10.80.100.128<br>
+INET6: 2001:1b70:8294:3d00::3314<br>
+alias: 
+                         </small></td>
+                         <td>SIGTRAN interfaces<br>(ASP/IPSP 1: port 2905)</td>
+                     </tr>
+                     <tr>
+                         <td><span class="cell_first_row">SIGTRAN VIP2</span><br><small>
+INET4: 10.80.100.129<br>
+INET6: 2001:1b70:8294:3d00::3315<br>
+alias: 
+                         </small></td>
+                         <td>SIGTRAN interfaces<br>(ASP/IPSP 2: port 2905)</td>
+                     </tr>
+                     <tr>
+                         <td align="center"><b>Bar</b></td>
+                         <td>mtas_bar_sp<br><small>
+l2: 2214<br>
+INET4 subnet: 172.31.49.0/25<br>
+INET4 gateway(s): 172.31.49.125,172.31.49.126<br>
+INET6 subnet: fd00:0:ac1f:3100::/64<br>
+INET6 gateway(s): fd00:0:ac1f:3100::fffd, fd00:0:ac1f:3100::fffe
+                         </small></td>
+                         <td>mtas_bar</td>
+                         <td><span class="cell_first_row">Bar IPSec IP</span><br><small>
+INET4: 10.80.100.133<br>
+INET6: 2001:1b70:8294:3d00::3319<br>
+alias: 
+                         </small></td>
+                         <td><span class="cell_first_row">Bar VIP</span><br><small>
+INET4: 10.80.100.131<br>
+INET6: 2001:1b70:8294:3d00::3317<br>
+alias: 
+                         </small></td>
+                         <td>X2</td>
+                     </tr>
+                 </tbody></table>
+             </div>
+         </div>
+         <div class="layer_content_row">
+             <div title="Not the active traffic separation profile" class="layer_content_column" style="opacity:0.25">
+                 <table border="1">
+                     <caption class="caption">vMTAS reference connectivity - traffic separation Profile 2</caption>
+                     <colgroup><col>
+                     <col>
+                     <col>
+                     <col>
+                     <col>
+                     </colgroup><tbody><tr>
+                         <td align="center"><b>VPN</b></td>
+                         <td align="center"><b>(VIP FrontEnd)<br>network</b></td>
+                         <td align="center"><b>ALB</b></td>
+                         <td align="center"><b>IPSec</b></td>
+                         <td align="center"><b>(V)IP</b></td>
+                         <td align="center"><b>Service Access Point(s)</b></td>
+                     </tr>
+                     <tr>
+                         <td align="center" rowspan="10"><b>OM</b></td>
+                         <td rowspan="5">mtas_om_sp1<br><small>
+l2: 2203<br>
+INET4 subnet: 10.80.68.48/29<br>
+INET4 gateway(s): 10.80.68.49<br>
+INET6 subnet: 2001:1b70:8294:3d2a::/64<br>
+INET6 gateway(s): fe80::10:80:68:49
+                         </small></td>
+                         <td align="center" rowspan="5">-<br>(non-vip)</td>
+                         <td align="center" rowspan="5">-</td>
+                         <td><span class="cell_first_row">OM IP</span><br><small>
+INET4: 10.80.68.52<br>
+INET6: 2001:1b70:8294:3d2a::4<br>
+alias:
+                         </small></td>
+                         <td>COM CLI, Netconf, SNMP and FileM SFTP</td>
+                     </tr>
+                     <tr>
+                         <td rowspan="2"><span class="cell_first_row">SC-1 System Management IP</span><br><small>
+INET4: 10.80.68.53<br>
+INET6: 2001:1b70:8294:3d2a::5<br>
+alias:
+                         </small></td>
+                         <td>SC-1 maintenance</td>
+                     </tr>
+                     <tr>
+                         <td>NTP synchronization, client side</td>
+                     </tr>
+                     <tr>
+                         <td rowspan="2"><span class="cell_first_row">SC-2 System Management IP</span><br><small>
+INET4: 10.80.68.54<br>
+INET6: 2001:1b70:8294:3d2a::6<br>
+alias:
+                         </small></td>
+                         <td>SC-2 maintenance</td>
+                     </tr>
+                     <tr>
+                         <td>NTP synchronization, client side</td>
+                     </tr>
+                     <tr>
+                         <td rowspan="3">mtas_om_sp2<br><small>
+l2: 2204<br>
+INET4 subnet: 172.17.49.0/25<br>
+INET4 gateway(s): 172.17.49.125,172.17.49.126<br>
+INET6 subnet: fd00:0:ac11:3100::/64<br>
+INET6 gateway(s): fd00:0:ac11:3100::fffd, fd00:0:ac11:3100::fffe
+                         </small></td>
+                         <td rowspan="3">mtas_om</td>
+                         <td rowspan="3"><span class="cell_first_row">OM IPSec IP</span><br><small>
+INET4: 10.80.100.132<br>
+INET6: 2001:1b70:8294:3d00::3318<br>
+alias: 
+                         </small></td>
+                         <td><span class="cell_first_row">OM VIP</span><br><small>
+INET4: 10.80.100.124<br>
+INET6: 2001:1b70:8294:3d00::3310<br>
+alias: platform-vip, platform-vip6
+                         </small></td>
+                         <td>Provisioning LDAP</td>
+                     </tr>
+                     <tr>
+                         <td><span class="cell_first_row">CAI3G VIP</span><br><small>
+INET4: 10.80.100.127<br>
+INET6: 2001:1b70:8294:3d00::3313<br>
+alias: cai3g-vip4, cai3g-vip6
+                         </small></td>
+                         <td>CAI3G interface</td>
+                     </tr>
+                     <tr>
+                         <td><span class="cell_first_row">Foo VIP</span><br><small>
+INET4: 10.80.100.130<br>
+INET6: 2001:1b70:8294:3d00::3316<br>
+alias: 
+                         </small></td>
+                      <td>X1</td>
+                     </tr>
+                     <tr>
+                         <td>mtas_om_pdl<br><small>
+l2: 2210<br>
+INET4 subnet: 172.23.49.0/25<br>
+INET4 gateway(s): 172.23.49.125<br>
+INET6 subnet: fd00:0:ac17:3100::/64<br>
+INET6 gateway(s): fd00:0:ac17:3100::fffd
+                         </small></td>
+                         <td>mtas_om_pdl</td>
+                         <td align="center">-</td>
+                         <td><span class="cell_first_row">Charging VIP MH left</span><br><small>
+INET4: -<br>
+INET6: 2001:1b70:8294:3d00::331a<br>
+alias: 
+                         </small></td>
+                         <td>Ro, Rf and CDS interfaces, mh1</td>
+                     </tr>
+                     <tr>
+                         <td>mtas_om_pdr<br><small>
+l2: 2211<br>
+INET4 subnet: 172.25.49.0/25<br>
+INET4 gateway(s): 172.25.49.125<br>
+INET6 subnet: fd00:0:ac19:3100::/64<br>
+INET6 gateway(s): fd00:0:ac19:3100::fffd
+                         </small></td>
+                         <td>mtas_om_pdr</td>
+                         <td align="center">-</td>
+                         <td><span class="cell_first_row">Charging VIP MH right</span><br><small>
+INET4: -<br>
+INET6: 2001:1b70:8294:3d00::331b<br>
+alias: 
+                         </small></td>
+                         <td>Ro, Rf and CDS interfaces, mh2</td>
+                     </tr>
+                     <tr>
+                         <td align="center" rowspan="6"><b>Sig</b></td>
+                         <td rowspan="2">mtas_sig_sp<br><small>
+l2: 2206<br>
+INET4 subnet: 172.19.49.0/25<br>
+INET4 gateway(s): 172.19.49.125,172.19.49.126<br>
+INET6 subnet: fd00:0:ac13:3100::/64<br>
+INET6 gateway(s): fd00:0:ac13:3100::fffd, fd00:0:ac13:3100::fffe
+                         </small></td>
+                         <td rowspan="2">mtas_sig</td>
+                         <td align="center" rowspan="2">-</td>
+                         <td><span class="cell_first_row">Traffic VIP</span><br><small>
+INET4: 10.80.100.125<br>
+INET6: 2001:1b70:8294:3d00::3311<br>
+alias: tasvip4, tasvip6
+                         </small></td>
+                         <td>All the other logical interfaces</td>
+                     </tr>
+                     <tr>
+                         <td><span class="cell_first_row">Ut VIP</span><br><small>
+INET4: 10.80.100.126<br>
+INET6: 2001:1b70:8294:3d00::3312<br>
+alias: tasvip4, tasvip6
+                         </small></td>
+                         <td>Ut interface</td>
+                     </tr>
+                     <tr>
+                         <td rowspan="2">mtas_sig_pdl<br><small>
+l2: 2212<br>
+INET4 subnet: 172.27.49.0/25<br>
+INET4 gateway(s): 172.27.49.125<br>
+INET6 subnet: fd00:0:ac1b:3100::/64<br>
+INET6 gateway(s): fd00:0:ac1b:3100::fffd
+                         </small></td>
+                         <td rowspan="2">mtas_sig_pdl</td>
+                         <td align="center" rowspan="2">-</td>
+                         <td><span class="cell_first_row">Traffic VIP MH left</span><br><small>
+INET4: -<br>
+INET6: 2001:1b70:8294:3d00::331c<br>
+alias: 
+                         </small></td>
+                         <td>Sh/Dh, mh1</td>
+                     </tr>
+                     <tr>
+                         <td><span class="cell_first_row">SIGTRAN VIP MH left</span><br><small>
+INET4: 10.80.100.128<br>
+INET6: 2001:1b70:8294:3d00::3314<br>
+alias: 
+                         </small></td>
+                         <td>SIGTRAN interfaces, mh1<br>(ASP/IPSP 1: port 2905; ASP/IPSP 2: port 2906)</td>
+                     </tr>
+                     <tr>
+                         <td rowspan="2">mtas_sig_pdr<br><small>
+l2: 2213<br>
+INET4 subnet: 172.29.49.0/25<br>
+INET4 gateway(s): 172.29.49.125<br>
+INET6 subnet: fd00:0:ac1d:3100::/64<br>
+INET6 gateway(s): fd00:0:ac1d:3100::fffd
+                         </small></td>
+                         <td rowspan="2">mtas_sig_pdr</td>
+                         <td align="center" rowspan="2">-</td>
+                         <td><span class="cell_first_row">Traffic VIP MH right</span><br><small>
+INET4: -<br>
+INET6: 2001:1b70:8294:3d00::331d<br>
+alias: 
+                         </small></td>
+                         <td>Sh/Dh, mh2</td>
+                     </tr>
+                     <tr>
+                         <td><span class="cell_first_row">SIGTRAN VIP MH right</span><br><small>
+INET4: 10.80.100.129<br>
+INET6: 2001:1b70:8294:3d00::3315<br>
+alias: 
+                         </small></td>
+                         <td>SIGTRAN interfaces, mh2<br>(ASP/IPSP 1: port 2905; ASP/IPSP 2: port 2906)</td>
+                     </tr>
+                     <tr>
+                         <td align="center"><b>Bar</b></td>
+                         <td>mtas_bar_sp<br><small>
+l2: 2214<br>
+INET4 subnet: 172.31.49.0/25<br>
+INET4 gateway(s): 172.31.49.125,172.31.49.126<br>
+INET6 subnet: fd00:0:ac1f:3100::/64<br>
+INET6 gateway(s): fd00:0:ac1f:3100::fffd, fd00:0:ac1f:3100::fffe
+                         </small></td>
+                         <td>mtas_bar</td>
+                         <td><span class="cell_first_row">Bar IPSec IP</span><br><small>
+INET4: 10.80.100.133<br>
+INET6: 2001:1b70:8294:3d00::3319<br>
+alias: 
+                         </small></td>
+                         <td><span class="cell_first_row">Bar VIP</span><br><small>
+INET4: 10.80.100.131<br>
+INET6: 2001:1b70:8294:3d00::3317<br>
+alias: 
+                         </small></td>
+                         <td>X2</td>
+                     </tr>
+                 </tbody></table>
+             </div>
+         </div>
+             </div>
+         
+     
+     <div class="layer">
+         <div class="layer_header">
+             <h2 class="header">Cloud InfraStructure relation</h2>
+         </div>
+         <div class="layer_content_row">
+             <div class="layer_content_column">
+                 <table border="1">
+                     <caption class="caption">Cloud System</caption>
+                     <tbody><tr><td><b>Type / version</b></td><td>CEE / R10.3</td></tr>
+                     <tr><td><b>Controller VIP</b></td><td>10.80.68.196</td></tr>
+                     <tr><td><b>Horizon</b></td><td>10.80.68.196</td></tr>
+                     <tr><td><b>Infra VIP</b></td><td>10.82.124.13</td></tr>
+                 </tbody></table>
+             </div>
+         </div>
+     </div>
+     <div class="layer">
+         <div class="layer_header">
+             <h2 class="header">Tenant details</h2>
+         </div>
+         <div class="layer_content_row">
+             <div class="layer_content_column">
+                 <b></b><table border="1">
+                     <caption class="caption">Blades</caption>
+                           <tbody><tr>         <th rowspan="2">Blade</th>         <th rowspan="2">Product Name</th>         <th rowspan="2">firstMacAddress</th>         <th colspan="4">Slot 0</th>         <th colspan="2">Slot 1</th>         <th rowspan="2">Console</th>         <th rowspan="2">Role(s)</th>      </tr>      <tr>         <th>1GEL</th>         <th>1GER</th>         <th>10GEL</th>         <th>10GER</th>         <th>10GEL</th>         <th>10GER</th>      </tr>
+             <tr>            <td>0-1</td>            <td>GEP5-64-1200</td>            <td>90:55:ae:3a:3e:1d</td>            <td>...3e:1e</td>            <td>...3e:1f</td>            <td>...3e:22</td>            <td>...3e:23</td>            <td>...3e:2c</td>            <td>...3e:2d</td>            <td>10.82.124.3 7028</td>            <td>CIC</td>            </tr>
+             <tr>            <td>0-3</td>            <td>GEP5-64-1200</td>            <td>90:55:ae:3a:3b:f5</td>            <td>...3b:f6</td>            <td>...3b:f7</td>            <td>...3b:fa</td>            <td>...3b:fb</td>            <td>...3c:04</td>            <td>...3c:05</td>            <td>10.82.124.3 7029</td>            <td>CIC</td>            </tr>
+             <tr>            <td>0-5</td>            <td>GEP5-64-1200</td>            <td>90:38:09:d2:e3:d9</td>            <td>...e3:da</td>            <td>...e3:db</td>            <td>...e3:de</td>            <td>...e3:df</td>            <td>...e3:e8</td>            <td>...e3:e9</td>            <td>-</td>            <td>CIC</td>            </tr>
+             <tr>            <td>0-7</td>            <td>GEP5-64</td>            <td>90:55:ae:3a:53:f5</td>            <td>...53:f6</td>            <td>...53:f7</td>            <td>...53:fa</td>            <td>...53:fb</td>            <td>...54:04</td>            <td>...54:05</td>            <td>-</td>            <td>-</td>            </tr>
+             <tr>            <td>0-9</td>            <td>GEP5-64</td>            <td>74:c9:9a:aa:3a:c4</td>            <td>...3a:c5</td>            <td>...3a:c6</td>            <td>...3a:c9</td>            <td>...3a:ca</td>            <td>...3a:d3</td>            <td>...3a:d4</td>            <td>-</td>            <td>-</td>            </tr>
+             <tr>            <td>0-11</td>            <td>GEP5-64</td>            <td>90:55:ae:3a:40:bd</td>            <td>...40:be</td>            <td>...40:bf</td>            <td>...40:c2</td>            <td>...40:c3</td>            <td>...40:cc</td>            <td>...40:cd</td>            <td>-</td>            <td>-</td>            </tr>
+             <tr>            <td>0-13</td>            <td>GEP5-64</td>            <td>04:4e:06:d0:14:69</td>            <td>...14:6a</td>            <td>...14:6b</td>            <td>...14:6e</td>            <td>...14:6f</td>            <td>...14:78</td>            <td>...14:79</td>            <td>-</td>            <td>-</td>            </tr>
+             <tr>            <td>0-15</td>            <td>GEP5-64</td>            <td>90:55:ae:3a:4d:35</td>            <td>...4d:36</td>            <td>...4d:37</td>            <td>...4d:3a</td>            <td>...4d:3b</td>            <td>...4d:44</td>            <td>...4d:45</td>            <td>-</td>            <td>-</td>            </tr>
+             <tr>            <td>0-17</td>            <td>GEP5-64</td>            <td>90:55:ae:3a:50:95</td>            <td>...50:96</td>            <td>...50:97</td>            <td>...50:9a</td>            <td>...50:9b</td>            <td>...50:a4</td>            <td>...50:a5</td>            <td>-</td>            <td>-</td>            </tr>
+             <tr>            <td>0-19</td>            <td>GEP5-64</td>            <td>90:55:ae:3a:4c:ed</td>            <td>...4c:ee</td>            <td>...4c:ef</td>            <td>...4c:f2</td>            <td>...4c:f3</td>            <td>...4c:fc</td>            <td>...4c:fd</td>            <td>-</td>            <td>-</td>            </tr>
+             <tr>            <td>0-21</td>            <td>GEP5-64</td>            <td>90:55:ae:3a:4c:d5</td>            <td>...4c:d6</td>            <td>...4c:d7</td>            <td>...4c:da</td>            <td>...4c:db</td>            <td>...4c:e4</td>            <td>...4c:e5</td>            <td>-</td>            <td>-</td>            </tr>
+             <tr>            <td>0-23</td>            <td>GEP5-64</td>            <td>90:55:ae:3a:4d:f5</td>            <td>...4d:f6</td>            <td>...4d:f7</td>            <td>...4d:fa</td>            <td>...4d:fb</td>            <td>...4e:04</td>            <td>...4e:05</td>            <td>-</td>            <td>-</td>            </tr>
+                 </tbody></table>
+             </div>
+             <div class="layer_content_column">
+                 <table border="1">
+                     <caption class="caption">Networks</caption>
+                     <tbody><tr><td><b>Name</b></td><td><b>VLAN</b></td><td><b>Subnet ID</b></td><td><b>Gateway</b></td><td><b>Hosts</b></td></tr>
+                 </tbody></table>
+             </div>
+         </div>
+         <div class="layer_content_row">
+             <p>Tenant specific BSP configuration: <a href="http://ims-mtas.sero.wh.rnd.internal.ericsson.com/cgi-bin/hal/gen_bsp_cloud_tenant_config.cgi?cloudEnv=EBS-33-CloudEnv-1">link</a></p>
+         </div>
+     </div>
+     <div class="layer">
+         <div class="layer_header">
+             <h2 class="header">Physical Node relation</h2>
+         </div>
+         <div class="layer_content_row">
+             <div class="layer_content_column">
+                 <table border="1">
+                     <caption class="caption">EBS system</caption>
+                     <tbody><tr><td><b>EBS system ID</b></td><td>EBS-33</td></tr>
+                     <tr><td><b>EBS Type</b></td><td>BSP R19.2.1</td></tr>
+                     <tr><td><b>EBS CNB IPv4</b></td><td>10.80.68.17</td></tr>
+                     <tr><td><b>EBS LCT Left IPv4</b></td><td>10.0.10.5</td></tr>
+                     <tr><td><b>External MTU</b></td><td>2140</td></tr>
+                 </tbody></table>
+             </div>
+             <div class="layer_content_column">
+                 <table border="1">
+                     <caption class="caption">Privileged blades</caption>
+                     <tbody><tr><td><b>Blade</b></td><td><b>Role(s)</b></td><td><b>Console</b></td></tr>
+                     <tr><td>0-0</td><td>DMXC</td><td>10.82.124.3 7027</td></tr>
+                     <tr><td>0-25</td><td>DMXC</td><td>10.82.124.3 7030</td></tr>
+                 </tbody></table>
+             </div>
+         </div>
+         <div class="layer_content_row">
+             <p>BSP config for the Tenant independent basic infrastructure: <a href="http://ims-mtas.sero.wh.rnd.internal.ericsson.com/cgi-bin/hal/bspConfig_BasicInfra.cgi?PhysicalNode=EBS-33">link</a></p>
+         </div>
+     </div>
+     <div class="layer">
+         <div class="layer_header">
+             <h2 class="header">Environment relation</h2>
+         </div>
+         <div class="layer_content_row">
+             <div class="layer_content_column">
+                 <table border="1">
+                     <caption class="caption">ITTE NET sysmgmt</caption>
+                     <tbody><tr>
+                         <td><b>Name</b></td>
+                         <td><b>Subnet ID</b></td>
+                         <td><b>Gateway</b></td>
+                         <td><b>Hosts</b></td>
+                     </tr>
+                     <tr>
+                         <td><b>ITTE NET sysmgmt IPv4</b></td>
+                         <td>10.82.124.0/27</td>
+                         <td>10.82.124.1</td>
+                         <td>
+                             10.82.124.10 - Kickstart server<br>
+                             10.82.124.5 - Sniffer (eth2)<br>
+                             10.82.124.16 - Monitoring satellite
+                         </td>
+                     </tr>
+                 </tbody></table>
+             </div>
+             <div class="layer_content_column">
+                 <table border="1">
+                     <caption class="caption">Lab hosts</caption>
+                     <tbody><tr><td></td><td><b>IPv4</b></td></tr>
+                     <tr><td><b>Management station</b></td><td>10.82.124.8</td></tr>
+                     <tr><td><b>Monitoring server</b></td><td>10.82.124.9</td></tr>
+                     <tr><td><b>DNS</b></td><td>10.221.16.10 ; 10.221.16.11 ; 10.221.16.10 ; 10.221.16.11</td></tr>
+                     <tr><td><b>NTP</b></td><td>10.221.17.86 ; 10.221.17.118 ; 10.221.17.214 ; 10.221.17.246</td></tr>
+                     <tr><td><b>NeLS</b></td><td>nels.mtas.k2.ericsson.se / </td></tr>
+                 </tbody></table>
+             </div>
+         </div>
+     </div>
+ 
+
+</body></html>
